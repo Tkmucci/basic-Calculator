@@ -33,13 +33,38 @@ public class BasicCalculator {
         System.out.print("Please select an option: ");
         String option = theScanner.next();
 
-        //multiply the numbers
-        int product = firstNumber * secondNumber;
-        System.out.println("The product is: " + product);
 
-        //add the numbers
-        //int sum = firstNumber + secondNumber;
-        //System.out.println("The sum is: " + sum);
+        if (option.equals("A") || option.equals("a")) {
+
+            //add the numbers
+            int sum = firstNumber + secondNumber;
+            System.out.println("The sum is: " + sum);
+
+        }
+        else if (option.equals("S") || option.equals("s")) {
+
+            //subtract the numbers
+            int difference = firstNumber - secondNumber;
+            System.out.println("The difference is: " + difference);
+
+        }
+        else if (option.equals("M") || option.equals("m")) {
+
+            //multiply the numbers
+            int product = firstNumber * secondNumber;
+            System.out.println("The product is: " + product);
+
+        }
+        else if (option.equals("D") || option.equals("d")) {
+
+            //divide the numbers
+            double quotient = (double) firstNumber / secondNumber;
+            System.out.println("The quotient is: " + quotient);
+
+        }
+
+
+
 
         //Answer verification
         //System.out.println("Is the answer correct? (Yes/No): ");
