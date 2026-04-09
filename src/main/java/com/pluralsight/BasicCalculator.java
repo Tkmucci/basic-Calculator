@@ -34,33 +34,31 @@ public class BasicCalculator {
         String option = theScanner.next();
 
 
-        if (option.equals("A") || option.equals("a")) {
+        switch (option) {
+            case "A", "a" -> {
 
-            //add the numbers
-            int sum = firstNumber + secondNumber;
-            System.out.println("The sum is: " + sum);
+                //add the numbers
+                int sum = firstNumber + secondNumber;
+                System.out.println("The sum is: " + sum);
+            }
+            case "S", "s" -> {
 
-        }
-        else if (option.equals("S") || option.equals("s")) {
+                //subtract the numbers
+                int difference = firstNumber - secondNumber;
+                System.out.println("The difference is: " + difference);
+            }
+            case "M", "m" -> {
 
-            //subtract the numbers
-            int difference = firstNumber - secondNumber;
-            System.out.println("The difference is: " + difference);
+                //multiply the numbers
+                int product = firstNumber * secondNumber;
+                System.out.println("The product is: " + product);
+            }
+            case "D", "d" -> {
 
-        }
-        else if (option.equals("M") || option.equals("m")) {
-
-            //multiply the numbers
-            int product = firstNumber * secondNumber;
-            System.out.println("The product is: " + product);
-
-        }
-        else if (option.equals("D") || option.equals("d")) {
-
-            //divide the numbers
-            double quotient = (double) firstNumber / secondNumber;
-            System.out.println("The quotient is: " + quotient);
-
+                //divide the numbers
+                double quotient = (double) firstNumber / secondNumber;
+                System.out.println("The quotient is: " + quotient);
+            }
         }
 
 
