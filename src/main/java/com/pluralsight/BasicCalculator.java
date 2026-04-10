@@ -16,15 +16,14 @@ public class BasicCalculator {
         System.out.print("First number: ");
         int firstNumber = theScanner.nextInt();
 
-        //ask for the second number
-        System.out.print("Second number: ");
-        int secondNumber = theScanner.nextInt();
+
 
 
         System.out.println("\n");
 
 
         //Options Menu
+        /*
         System.out.println("Possible Calculations: ");
         System.out.println("(A)dd");
         System.out.println("(S)ubtract");
@@ -33,33 +32,41 @@ public class BasicCalculator {
         System.out.print("Please select an option: ");
         String option = theScanner.next();
 
+         */
+        String option = theScanner.next();
+
 
         switch (option) {
-            case "A", "a" -> {
+            case "+" -> {
 
                 //add the numbers
                 int sum = firstNumber + secondNumber;
                 System.out.println("The sum is: " + sum);
             }
-            case "S", "s" -> {
+            case "-" -> {
 
                 //subtract the numbers
                 int difference = firstNumber - secondNumber;
                 System.out.println("The difference is: " + difference);
             }
-            case "M", "m" -> {
+            case "*" -> {
 
                 //multiply the numbers
                 int product = firstNumber * secondNumber;
                 System.out.println("The product is: " + product);
             }
-            case "D", "d" -> {
+            case "/" -> {
 
                 //divide the numbers
                 double quotient = (double) firstNumber / secondNumber;
                 System.out.println("The quotient is: " + quotient);
             }
         }
+
+
+        //ask for the second number
+        System.out.print("Second number: ");
+        int secondNumber = theScanner.nextInt();
 
 
 
