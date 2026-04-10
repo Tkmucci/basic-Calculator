@@ -6,20 +6,20 @@ public class BasicCalculator {
 
     public static void main(String[] args) {
 
-        Scanner theScanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
 
         // 1. First number
         System.out.print("First number: ");
-        int firstNumber = theScanner.nextInt();
+        int firstNumber = sc.nextInt();
 
         // 2. Operator
         System.out.print("Operator (+, -, *, /): ");
-        String option = theScanner.next();
+        String option = sc.next();
 
         // 3. Second number
         System.out.print("Second number: ");
-        int secondNumber = theScanner.nextInt();
+        int secondNumber = sc.nextInt();
 
         // 4. Calculate
         switch (option) {
